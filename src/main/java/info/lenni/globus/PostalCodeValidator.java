@@ -8,6 +8,14 @@ public class PostalCodeValidator {
 
     public static Map<String, Pattern> postalCodes = new HashMap();
 
+    public static boolean isValid(String postalCode, String country){
+        country = country.toUpperCase();
+        if (!postalCodes.containsKey(country)){
+            throw new RuntimeException(String.format("No postal code information for country iso code %s available.", country));
+        }
+        return postalCodes.get(country).matcher(postalCode).matches();
+    }
+
     static {
         String[] regexes = {
                 "GB", "GIR[ ]?0AA|" +
