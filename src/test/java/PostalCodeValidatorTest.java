@@ -7,7 +7,7 @@ public class PostalCodeValidatorTest {
 
     @Test
     public void shouldInitialialiseRegexes() throws Exception {
-        assertThat(PostalCodeValidator.postalCodes.size(), is(157));
+        assertThat(PostalCodeValidator.postalCodes.size(), is(158));
     }
 
 }
