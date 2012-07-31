@@ -22,19 +22,16 @@ public class PostalCodeValidatorTest {
     }
 
     @Test
-    @Parameters({"KA9 4AT", "SW4 8LL"})
+    //http://www.doogal.co.uk/PostcodeGenerator.php
+    @Parameters({"KA9 4AT", "SW4 8LL", "DA11 8AQ", "SL3 0AX", "CV6 4DZ"})
     public void shouldValidateBritishPostalCode(String postalCode) throws Exception {
         assertTrue(PostalCodeValidator.isValid(postalCode, "GB"));
     }
 
-    public void shouldInvalidateBritishPostalCode() throws Exception {
-        assertFalse(PostalCodeValidator.isValid("KA9", "GB"));
-    }
-
     @Test
     @Parameters({"KA9-4AT", "SW 8LL", "678"})
-    public void shouldInvalidateGermanPostalCode(String postalCode) throws Exception {
-        assertFalse(PostalCodeValidator.isValid(postalCode, "DE"));
+    public void shouldInvalidateBritishPostalCode(String postalCode) throws Exception {
+        assertFalse(PostalCodeValidator.isValid(postalCode, "GB"));
     }
 }
 
