@@ -1,0 +1,7 @@
+/.gradle
+build
+globus.iml
+globus.ipr
+globus.iws
+/out
+/.idea
