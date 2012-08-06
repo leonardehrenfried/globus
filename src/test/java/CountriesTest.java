@@ -14,5 +14,11 @@ public class CountriesTest {
         assertThat(countries.get("DE"), is("Deutschland"));
     }
 
+    @Test
+    public void shouldAcceptUpperCase(){
+        Map<String, String> countries = Countries.get("DE");
+        assertThat(countries.get("DE"), is("Deutschland"));
+    }
+
 
 }
