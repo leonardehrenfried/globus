@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 
 @RunWith(JUnitParamsRunner.class)
-public class PostalCodeValidatorTest {
+public class PostalCodesTest {
 
     @Test
     public void shouldInitialialiseRegexes() throws Exception {
