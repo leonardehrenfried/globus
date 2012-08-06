@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Pattern;
 
-public class PostalCodeValidator {
+public class PostalCodes {
 
     public static Map<String, Pattern> postalCodes = new HashMap<>();
 
@@ -27,7 +27,7 @@ public class PostalCodeValidator {
 
     static {
         try {
-            InputStream in = PostalCodeValidator.class.getResourceAsStream("postalCodeData.xml");
+            InputStream in = PostalCodes.class.getResourceAsStream("postalCodeData.xml");
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             factory.setNamespaceAware(true);
             DocumentBuilder builder = null;

@@ -1,6 +1,6 @@
 #`globus`: Making your app world-ready
 
-A little collection of utilities that will make it easier for your
+A collection of utilities that will make it easier for your
 JVM based software to be ready for the world's users.
 
 Features:
