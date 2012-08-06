@@ -1,4 +1,4 @@
-import info.lenni.globus.PostalCodeValidator;
+import info.lenni.PostalCodeValidator;
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 import org.junit.Test;
