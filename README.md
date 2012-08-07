@@ -16,6 +16,7 @@ PostalCodes.isValid("DE", "10407");
 ```java
 Countries.get("de"); //returns a map of <countryCode,nameOfCountry>
 ```
+- No dependencies (apart from the JRE of course)
 
 Planned features (pull requests welcome!):
 - Phone number formatting
